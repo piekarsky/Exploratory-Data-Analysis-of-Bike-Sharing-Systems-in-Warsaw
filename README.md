@@ -1,6 +1,7 @@
 # Analysis-And-Visualization-For-Bike-Sharing-Systems-In-Warsaw
 
-This project analyzes data of the bike-sharing system in Warsaw. The project uses over 4,100 JSON files, saved every 10 minutes, containing station data and lists of bikes  located at each bicycle station in Warsaw.
+Jupyter Notebook with analyzes the data of the bike-sharing system in Warsaw. The project uses over 4,100 JSON files, saved every 10 minutes, containing the station data and lists of bikes  located at each bicycle station in Warsaw.
+The project uses archival meteorological data collected by the Institute of Meteorology and Water Management - available at https://danepubliczne.imgw.pl/datastore.
 
 Main information about the data:
 - 4,184 JSON files, saved every 10 minutes between 03/04/2018 - 04/04/2018
@@ -13,3 +14,5 @@ An overview of the most important attributes included in this set used in the an
 - free_racks - number of free positions at the station
 - bike_numbers - numbers of individual bikes pinned at a given station
 - lat, lng - coordinates (longitude and latitude) of the bicycle station
+
+
