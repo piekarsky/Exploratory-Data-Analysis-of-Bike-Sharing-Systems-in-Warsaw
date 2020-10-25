@@ -16,3 +16,13 @@ An overview of the most important attributes included in this set used in the an
 - bike_numbers - numbers of individual bikes pinned at a given station
 - lat, lng - coordinates (longitude and latitude) of a bike station
 
+
+Data analysis and visualization was used in the Folium library, thanks to which a map was created containing interactive markers that automatically group the number of stations on the map. Tags are grouped with locations if they are close enough to each other.
+
+
+Below is a ,ap of Warsaw with the location of 380 bicycle stations using interactive grouping
+
+<img src = img/warsaw_map.png/>
+
+
+
