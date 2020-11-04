@@ -22,7 +22,7 @@ Data analysis and visualization was used in the Folium library, thanks to which 
 
 Below is a ,ap of Warsaw with the location of 380 bicycle stations using interactive grouping
 
-<img width="600" height="400" src = img/warsaw_map.png/>
+<img width="600" height="300" src = img/warsaw_map.png/>
 
 
 On this map there are names of individual stations along with the number of bicycle stands there. This is visible when you zoom in on the map and hover the cursor over the selected marker.
