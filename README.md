@@ -9,7 +9,7 @@ Main information about data:
 
 An overview of the most important attributes included in this set used in the analysis and visualization is presented below:
 
-- uid - identifier of the bike station
+- uid - identifier of a bike station
 - bikes - the number of bikes at a station
 - bike_racks - the number of racks at a station
 - free_racks - the number of free positions at a station
@@ -20,12 +20,13 @@ An overview of the most important attributes included in this set used in the an
 Data analysis and visualization was used in the Folium library, thanks to which a map was created containing interactive markers that automatically group the number of stations on the map. Tags are grouped with locations if they are close enough to each other.
 
 
-Below is a ,ap of Warsaw with the location of 380 bicycle stations using interactive grouping
 
-<img width="600" height="300" src = img/warsaw_map.png/>
+The picture below shows the map of Warsaw with the location of 380 bicycle stations using interactive grouping
+
+<img width="600" height="350" src = img/warsaw_map.png/>
 
 
 On this map there are names of individual stations along with the number of bicycle stands there. This is visible when you zoom in on the map and hover the cursor over the selected marker.
 
-<img width="600" height="400" src = img/folium.png/>
+<img width="600" height="350" src = img/folium.png/>
 
