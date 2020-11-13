@@ -16,8 +16,9 @@ An overview of the most important attributes included in this set used in the an
 - bike_numbers - numbers of individual bikes pinned at a given station
 - lat, lng - coordinates (longitude and latitude) of a bike station
 
+<hr>
 
-Data analysis and visualization was used in the Folium library, thanks to which a map was created containing interactive markers that automatically group the number of stations on the map. Tags are grouped with locations if they are close enough to each other.
+The analysis and visualization of this data uses the folium library, thanks to which it was created a map containing interactive markers that automatically group the number of stations on the map. Tags are grouped with locations if they are close enough to each other.
 
 
 
@@ -25,8 +26,10 @@ The picture below shows the map of Warsaw with the location of 380 bicycle stati
 
 <img width="600" height="350" src = img/warsaw_map.png/>
 
-
+<br>
 On this map there are names of individual stations along with the number of bicycle stands there. This is visible when you zoom in on the map and hover the cursor over the selected marker.
 
 <img width="600" height="350" src = img/folium.png/>
 
+<br>
+Thanks to the use of the Folium library, you can also present bicycle routes. Those that were counted at least 50 times over the analyzed period are presented on the map below.
