@@ -32,4 +32,5 @@ On this map there are names of individual stations along with the number of bicy
 <img width="600" height="350" src = img/folium.png/>
 
 <br>
-Thanks to the use of the Folium library, you can also present bicycle routes. Those that were counted at least 50 times over the analyzed period are presented on the map below.
+Thanks to the use of the Folium library, we can also present popular bike routes. Those that were counted at least 50 times over the analyzed period are presented on the map below.
+<img width="600" height="350" src = img/popular_routes.png/>
