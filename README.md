@@ -33,4 +33,11 @@ On this map there are names of individual stations along with the number of bicy
 
 <br>
 Thanks to the use of the Folium library, we can also present popular bike routes. Those that were counted at least 50 times over the analyzed period are presented on the map below.
-<img width="600" height="350" src = img/popular_routes.png/>
+<img width="600" height="500" src = img/popular_routes.png/>
+
+<hr>
+
+The notebook includes many charts, among others
+correlation between the number of bike rentals and the air temperature or depending on the hour on individual days of the week.
+The graph below shows the correlation between the number of bike rentals and the air temperature.
+<img width="600" height="350" src = img/chart1.png/>
