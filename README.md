@@ -38,6 +38,9 @@ Thanks to the use of the Folium library, we can also present popular bike routes
 <hr>
 
 The notebook includes many charts, among others
-correlation between the number of bike rentals and the air temperature or depending on the hour on individual days of the week.
-The graph below shows the correlation between the number of bike rentals and the air temperature.
-<img width="600" height="350" src = img/chart1.png/>
+correlation between the number of bike rentals and the air temperature or depending on the hour on individual days of the week. <br>
+The chart below shows the correlation between the number of bike rentals and the air temperature.
+<img width="600" height="300" src = img/chart1.png/>
+<br>
+And the chart below showing the correlation air temperature or depending on the hour on individual days of the week.
+<img width="600" height="300" src = img/chart2.png/>
