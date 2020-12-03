@@ -1,7 +1,7 @@
 # Analysis-And-Visualization-For-Bike-Sharing-Systems-In-Warsaw
 
 
-<p style="font-size:40px"><b>1. Project description </b></p>
+<h1><b>1. Project description </b></p></h2>
 
 Jupyter Notebook contains data analysis and visualization of the bike-sharing system in Warsaw. The project uses over 4,100 JSON files, saved every 10 minutes, containing station data and lists of bikes located at each bike station in Warsaw.
 The project uses archival meteorological data collected by the Institute of Meteorology and Water Management - available at https://danepubliczne.imgw.pl/datastore.
@@ -25,7 +25,7 @@ An overview of the most important attributes included in this set used in the an
 <hr>
 
 
-<p style="font-size:40px"><b>3. Data preprocessing </b></p>
+<h1><b>3. Data preprocessing </b></h2>
 
 After reading and data preprocessing (removing unnecessary columns, changing data types and breaking down the JSON file name into year, month, day, hour, minutes), the basic data frame was extended, among others o the values ​​of temperatures and amount of rainfall in individual time intervals. Meteorological data along with the codes of stations or parameters of phenomena were downloaded from the website of the Institute of Meteorology and Water Management available at  https://danepubliczne.imgw.pl/datastore.
 The analyzed, grouped data frame is presented in the photo below. <b>The day_of_week</b>, <b>city_code</b>, <b>date_normalize</b> columns were created for the purpose of data analysis.
