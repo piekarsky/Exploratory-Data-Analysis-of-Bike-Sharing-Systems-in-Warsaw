@@ -1,7 +1,7 @@
 # Analysis-And-Visualization-For-Bike-Sharing-Systems-In-Warsaw
 
 
-<p style="font-size:30px"><b>1. Project description </b></p>
+<p style="font-size:40px"><b>1. Project description </b></p>
 
 Jupyter Notebook contains data analysis and visualization of the bike-sharing system in Warsaw. The project uses over 4,100 JSON files, saved every 10 minutes, containing station data and lists of bikes located at each bike station in Warsaw.
 The project uses archival meteorological data collected by the Institute of Meteorology and Water Management - available at https://danepubliczne.imgw.pl/datastore.
@@ -11,8 +11,8 @@ Main information about data:
 - 1 JSON file contains information on an average of 355 bicycle stations in Warsaw
 <hr>
 
+<p style="font-size:40px"><b>2. Description of dataset </b></p>
 
-2. Description of dataset
 An overview of the most important attributes included in this set used in the analysis and visualization is presented below:
 
 - uid - identifier of a bike station
@@ -25,6 +25,18 @@ An overview of the most important attributes included in this set used in the an
 <hr>
 
 
+<p style="font-size:40px"><b>3. Data preprocessing </b></p>
+
+After reading and data preprocessing (removing unnecessary columns, changing data types and breaking down the JSON file name into year, month, day, hour, minutes), the basic data frame was extended, among others o the values ​​of temperatures and amount of rainfall in individual time intervals. Meteorological data along with the codes of stations or parameters of phenomena were downloaded from the website of the Institute of Meteorology and Water Management available at  https://danepubliczne.imgw.pl/datastore.
+The analyzed, grouped data frame is presented in the photo below. <b>The day_of_week</b>, <b>city_code</b>, <b>date_normalize</b> columns were created for the purpose of data analysis.
+</br>
+The analyzed data frame with multiple indexes is shown below
+<img width="600" height="350" src = img/dataframe.png/>
+
+
+The first part of the notebook contains an analysis  and visualization of bike routes - on the basis of information about the bikenumbers that are pinned to the station in a given time interval. This collection contains <b>19,783,745</b> observations.
+The second part of the notebook contains an analysis of bicycle stations and is based on the basic dimension of the collection. This dimension comprises <b>1,472,021</b> observations and <b>13</b> variables. 
+<hr>
 
 
 
