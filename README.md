@@ -11,37 +11,41 @@ Main information about data:
 - 1 JSON file contains information on an average of 355 bicycle stations in Warsaw
 <hr>
 
-<p style="font-size:40px"><b>2. Description of dataset </b></p>
+<h3><b>2. Description of dataset </b></p></h3>
 
 An overview of the most important attributes included in this set used in the analysis and visualization is presented below:
 
-- uid - identifier of a bike station
-- bikes - the number of bikes at a station
-- bike_racks - the number of racks at a station
-- free_racks - the number of free positions at a station
-- bike_numbers - numbers of individual bikes pinned at a given station
-- lat, lng - coordinates (longitude and latitude) of a bike station
+- <b>uid</b> - identifier of a bike station
+- <b>bikes</b> - the number of bikes at a station
+- <b>bike_racks</b> - the number of racks at a station
+- <b>free_racks</b> - the number of free positions at a station
+- <b>bike_numbers</b> - numbers of individual bikes pinned at a given station
+- <b>lat</b>, <b>lng</b> - coordinates (longitude and latitude) of a bike station
 
 <hr>
 
 
 <h3><b>3. Preparing data for analysis </b></h3>
+<h4><b>3.1. Data preprocessing </b></h4>
 
-After reading and data preprocessing (removing unnecessary columns, changing data types and breaking down the JSON file name into year, month, day, hour, minutes), the basic data frame was extended, among others o the values ​​of temperatures and amount of rainfall in individual time intervals. Meteorological data along with the codes of stations or parameters of phenomena were downloaded from the website of the Institute of Meteorology and Water Management available at  https://danepubliczne.imgw.pl/datastore.
-The analyzed, grouped data frame is presented in the photo below. <b>The day_of_week</b>, <b>city_code</b>, <b>date_normalize</b> columns were created for the purpose of data analysis.
+
+After reading and data preprocessing (removing unnecessary columns, changing data types and breaking down the JSON file name into year, month, day, hour, minutes), the basic data frame was extended, among others o the values ​​of temperatures and amount of rainfall in individual time intervals. Meteorological data along with the codes of stations or parameters of phenomenon were downloaded from the website of the Institute of Meteorology and Water Management available at  https://danepubliczne.imgw.pl/datastore.
+The analyzed, grouped data frame is presented in the photo below. The <b>day_of_week</b>, <b>city_code</b>, <b>date_normalize</b> columns were created for the purpose of data analysis.
 </br>
 The analyzed data frame with multiple indexes is shown below
-<img width="600" height="350" src = img/dataframe.png/>
+<img width="650" height="350" src = img/dataframe.png/>
 
 
 The first part of the notebook contains an analysis  and visualization of bike routes - on the basis of information about the bikenumbers that are pinned to the station in a given time interval. This collection contains <b>19 783 745</b> observations.
 The second part of the notebook contains an analysis of bicycle stations and is based on the basic dimension of the collection. This dimension comprises <b>1 472 021</b> observations and <b>13</b> variables. 
 <hr>
 
-<h3><b>3.1. Check for missing data </b></h3>
-The data analysis began with checking whether the entire data set at each station contains enough information about the number of bikes in a given time period. As you can see below, missing values ​​were noted for 29 stations (these values ​​could be recorded up to 4184, because that many JSON files constituted the data set).
-
+<h3><b>3.1. Checking for missing data </b></h3>
+The data analysis began with checking whether the entire data set at each station contains enough information about the number of bikes in a given time period. As seen below, missing values ​​were noted for 29 stations (these values ​​could be recorded up to 4184, because that many JSON files constituted the dataset).
+<img width="650" height="350" src = img/table1.png/>
 <br>
+
+
 For the stations:
 
 Czerniakowska - Gagarina,
@@ -51,9 +55,19 @@ al. Jana Pawła II - Grzybowska
 The number of missing information on the number of bikes at stations has been replaced with values from previous time intervals, as they do not constitute a large share in the entire data set.
 
 The rest of the stations from the list above were removed from the analysis due to the large amount of missing information
+e.g. for the Fieldorf - Bukowski stations 1092 NaN / 4184 = 26%
+
+<h4><b>3.2. Checking outliers </b></h4>
+
+The occurrence of outliers for particular days was checked using a box plot. It shows that one station on March 14 and March 25 recorded a much larger number of bike rentals compared to all other stations on that day.
+<img width="650" height="350" src = img/box-plot1.png/>
 
 
-<h3><b>3.2. Checking outliers </b></h3>
+
+
+On the chart above, it can be seen that one station on March 14 and March 25 recorded a much larger number of bike rentals compared to all other stations on that day.
+
+Due to the large variety of locations of bicycle stations and the fact that they can be very popular in the event of major sports or music events, these values do not have to mean a data collection error. The popularity of the station was assessed on the basis of the median, which is not sensitive to outliers, so extreme points were not removed
 
 
 
