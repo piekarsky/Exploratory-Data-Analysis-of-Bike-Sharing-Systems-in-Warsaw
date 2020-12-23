@@ -32,8 +32,8 @@ An overview of the most important attributes included in this set used in the an
 After reading and data preprocessing (removing unnecessary columns, changing data types and breaking down the JSON file name into year, month, day, hour, minutes), the basic data frame was extended, among others o the values ​​of temperatures and amount of rainfall in individual time intervals. Meteorological data along with the codes of stations or parameters of phenomenon were downloaded from the website of the Institute of Meteorology and Water Management available at  https://danepubliczne.imgw.pl/datastore.
 The analyzed, grouped data frame is presented in the photo below. The <b>day_of_week</b>, <b>city_code</b>, <b>date_normalize</b> columns were created for the purpose of data analysis.
 </br>
-The analyzed data frame with multiple indexes is shown below
-<img width="650" height="350" src = img/dataframe.png/>
+The analyzed dataframe with multiple indexes is shown below
+<img width="700" height="350" src = img/dataframe.png/>
 
 
 The first part of the notebook contains an analysis  and visualization of bike routes - on the basis of information about the bikenumbers that are pinned to the station in a given time interval. This collection contains <b>19 783 745</b> observations.
@@ -42,7 +42,7 @@ The second part of the notebook contains an analysis of bicycle stations and is 
 
 <h3><b>3.1. Checking for missing data </b></h3>
 The data analysis began with checking whether the entire data set at each station contains enough information about the number of bikes in a given time period. As seen below, missing values ​​were noted for 29 stations (these values ​​could be recorded up to 4184, because that many JSON files constituted the dataset).
-<img width="650" height="350" src = img/table1.png/>
+<img width="650" height="650" src = img/table1.png/>
 <br>
 
 
@@ -60,7 +60,7 @@ e.g. for the Fieldorf - Bukowski stations 1092 NaN / 4184 = 26%
 <h4><b>3.2. Checking outliers </b></h4>
 
 The occurrence of outliers for particular days was checked using a box plot. It shows that one station on March 14 and March 25 recorded a much larger number of bike rentals compared to all other stations on that day.
-<img width="650" height="350" src = img/box-plot1.png/>
+<img width="650" height="650" src = img/box-plot1.png/>
 
 
 
