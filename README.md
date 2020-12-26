@@ -1,7 +1,7 @@
 # Analysis-And-Visualization-For-Bike-Sharing-Systems-In-Warsaw
 
 
-<h3><b>1. Project description </b></p></h3>
+<h2><b>1. Project description </b></p></h2>
 
 Jupyter Notebook contains data analysis and visualization of the bike-sharing system in Warsaw. The project uses over 4,100 JSON files, saved every 10 minutes, containing station data and lists of bikes located at each bike station in Warsaw.
 The project uses archival meteorological data collected by the Institute of Meteorology and Water Management - available at https://danepubliczne.imgw.pl/datastore.
@@ -9,9 +9,9 @@ The project uses archival meteorological data collected by the Institute of Mete
 Main information about data:
 - 4,184 JSON files, saved every 10 minutes between 03/04/2018 - 04/04/2018
 - 1 JSON file contains information on an average of 355 bicycle stations in Warsaw
-<hr>
 
-<h3><b>2. Description of dataset </b></p></h3>
+
+<h2><b>2. Description of dataset </b></p></h2>
 
 An overview of the most important attributes included in this set used in the analysis and visualization is presented below:
 
@@ -22,42 +22,42 @@ An overview of the most important attributes included in this set used in the an
 - <b>bike_numbers</b> - numbers of individual bikes pinned at a given station
 - <b>lat</b>, <b>lng</b> - coordinates (longitude and latitude) of a bike station
 
-<hr>
 
 
-<h3><b>3. Preparing data for analysis </b></h3>
-<h4><b>3.1. Data preprocessing </b></h4>
+
+<h2><b>3. Preparing data for analysis </b></h2>
+<h3><b>3.1. Data preprocessing </b></h3>
 
 
 After reading and data preprocessing (removing unnecessary columns, changing data types and breaking down the JSON file name into year, month, day, hour, minutes), the basic data frame was extended, among others o the values ​​of temperatures and amount of rainfall in individual time intervals. Meteorological data along with the codes of stations or parameters of phenomenon were downloaded from the website of the Institute of Meteorology and Water Management available at  https://danepubliczne.imgw.pl/datastore.
 The analyzed, grouped data frame is presented in the photo below. The <b>day_of_week</b>, <b>city_code</b>, <b>date_normalize</b> columns were created for the purpose of data analysis.
 </br>
 The analyzed dataframe with multiple indexes is shown below
-<img width="700" height="350" src = img/dataframe.png/>
+</br>
+<img width="800" height="350" src = img/dataframe.png/>
 
 
-The first part of the notebook contains an analysis  and visualization of bike routes - on the basis of information about the bikenumbers that are pinned to the station in a given time interval. This collection contains <b>19 783 745</b> observations.
+The first part of the notebook contains an analysis  and visualization of bike routes - on the basis of information about the bike numbers that are pinned to the station in a given time interval. This collection contains <b>19 783 745</b> observations.
 The second part of the notebook contains an analysis of bicycle stations and is based on the basic dimension of the collection. This dimension comprises <b>1 472 021</b> observations and <b>13</b> variables. 
-<hr>
 
-<h3><b>3.1. Checking for missing data </b></h3>
+
+<h3><b>3.2. Checking for missing data </b></h3>
 The data analysis began with checking whether the entire data set at each station contains enough information about the number of bikes in a given time period. As seen below, missing values ​​were noted for 29 stations (these values ​​could be recorded up to 4184, because that many JSON files constituted the dataset).
-<img width="650" height="650" src = img/table1.png/>
+<img width="350" height="600" src = img/table1.png/>
 <br>
 
 
 For the stations:
-
-Czerniakowska - Gagarina,
-Marszałkowska - al. Solidarności,
-Wołoska-Odyńca,
-al. Jana Pawła II - Grzybowska
+<b>Czerniakowska - Gagarina</b>,
+<b>Marszałkowska - al. Solidarności</b>,
+<b>Wołoska-Odyńca</b>,
+<b>al. Jana Pawła II - Grzybowska</b>
 The number of missing information on the number of bikes at stations has been replaced with values from previous time intervals, as they do not constitute a large share in the entire data set.
 
 The rest of the stations from the list above were removed from the analysis due to the large amount of missing information
 e.g. for the Fieldorf - Bukowski stations 1092 NaN / 4184 = 26%
 
-<h4><b>3.2. Checking outliers </b></h4>
+<h3><b>3.3. Checking outliers </b></h3>
 
 The occurrence of outliers for particular days was checked using a box plot. It shows that one station on March 14 and March 25 recorded a much larger number of bike rentals compared to all other stations on that day.
 <img width="650" height="650" src = img/box-plot1.png/>
@@ -68,6 +68,13 @@ The occurrence of outliers for particular days was checked using a box plot. It 
 On the chart above, it can be seen that one station on March 14 and March 25 recorded a much larger number of bike rentals compared to all other stations on that day.
 
 Due to the large variety of locations of bicycle stations and the fact that they can be very popular in the event of major sports or music events, these values do not have to mean a data collection error. The popularity of the station was assessed on the basis of the median, which is not sensitive to outliers, so extreme points were not removed
+
+</br>
+Using the box-plot, it is also possible to evaluate the occurrence of outliers at particular hours of each day based on the sum of bikes rented from all stations. The chart shows that one day at 2 a.m. and 7 a.m. there was a much greater number of rentals, and these values ​​in such hours over five times higher than their median are certainly unrealistic.
+<img width="600" height="450" src = img/box-plot1.png/>
+
+
+
 
 
 
