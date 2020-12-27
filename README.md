@@ -10,6 +10,7 @@ Main information about data:
 - 4,184 JSON files, saved every 10 minutes between 03/04/2018 - 04/04/2018
 - 1 JSON file contains information on an average of 355 bicycle stations in Warsaw
 
+</br>
 
 <h2><b>2. Description of dataset </b></p></h2>
 
@@ -23,7 +24,7 @@ An overview of the most important attributes included in this set used in the an
 - <b>lat</b>, <b>lng</b> - coordinates (longitude and latitude) of a bike station
 
 
-
+</br>
 
 <h2><b>3. Preparing data for analysis </b></h2>
 <h3><b>3.1. Data preprocessing </b></h3>
@@ -41,9 +42,9 @@ The first part of the notebook contains an analysis  and visualization of bike r
 The second part of the notebook contains an analysis of bicycle stations and is based on the basic dimension of the collection. This dimension comprises <b>1 472 021</b> observations and <b>13</b> variables. 
 
 
-<h3><b>3.2. Checking for missing data </b></h3>
+<h3><b>3.2. Checking for missing values </b></h3>
 The data analysis began with checking whether the entire data set at each station contains enough information about the number of bikes in a given time period. As seen below, missing values ​​were noted for 29 stations (these values ​​could be recorded up to 4184, because that many JSON files constituted the dataset).
-<img width="350" height="600" src = img/table1.png/>
+<img width="4000" height="500" src = img/table1.png/>
 <br>
 
 
@@ -69,19 +70,26 @@ On the chart above, it can be seen that one station on March 14 and March 25 rec
 
 Due to the large variety of locations of bicycle stations and the fact that they can be very popular in the event of major sports or music events, these values do not have to mean a data collection error. The popularity of the station was assessed on the basis of the median, which is not sensitive to outliers, so extreme points were not removed
 
+
 </br>
 Using the box-plot, it is also possible to evaluate the occurrence of outliers at particular hours of each day based on the sum of bikes rented from all stations. The chart shows that one day at 2 a.m. and 7 a.m. there was a much greater number of rentals, and these values ​​in such hours over five times higher than their median are certainly unrealistic.
-<img width="600" height="450" src = img/box-plot1.png/>
+<img width="600" height="550" src = img/box-plot2.png/>
 
 
 
+Analyzing the data in terms of the largest number of bikes rented from all time periods, it can be seen that for many stations on <b>March 27</b> at <b>2:30</b> and <b>March 14 </b>at <b>7:00 </b>there were above-average numbers of bikes rented. 
+
+In view of the above, the data on the number of bikes at stations from <b>2018-03-27 02:30</b>, <b>2018-03-27 02:40 </b>and <b>2018-03-14 07:00 </b>have been deleted.
+After adding up the number of bikes rented at all stations throughout the dataset period, it can be seen that there are stations from which no bike has left in the considered time. These stations, in the context of the popularity rating, were not taken into account and were removed from the dataset.
+<img width="600" height="550" src = img/dataframe2.png/>
 
 
+
+<h2><b>3. Exploratory data analysis </b></h2>
+<h3><b>3.1. Interactive grouping of bikes stations using the Folium library </b></h3>
 
 
 The analysis and visualization of this data uses the folium library, thanks to which it was created a map containing interactive markers that automatically group the number of stations on the map. Tags are grouped with locations if they are close enough to each other.
-
-
 
 The picture below shows the map of Warsaw with the location of 380 bike stations using interactive grouping
 
@@ -92,9 +100,20 @@ On this map there are names of individual stations along with the number of bike
 
 <img width="600" height="350" src = img/folium.png/>
 
+
+
 <br>
+
+<h3><b>3.2. Analysis of the popularity of bike routes </b></h3>
+
+The analyzed set, containing information about the numbers of bikes that are pinned to the station in a given time interval, constitutes <b>19 783 745</b> observations.
+
 Thanks to the use of the Folium library, we can also present popular bike routes. Those that were counted at least 50 times over the analyzed period are presented on the map below.
 <img width="600" height="500" src = img/popular_routes.png/>
+
+
+
+
 
 <hr>
 
