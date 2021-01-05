@@ -1,20 +1,20 @@
 # Analysis-And-Visualization-For-Bike-Sharing-Systems-In-Warsaw
 
 
-<h2><b>1. Project description </b></p></h2>
+<h2><b>1. Synopsis </b></p></h2>
 
-Jupyter Notebook contains data analysis and visualization of the bike-sharing system in Warsaw. The project uses over 4,100 JSON files, saved every 10 minutes, containing station data and lists of bikes located at each bike station in Warsaw.
-The project uses archival meteorological data collected by the Institute of Meteorology and Water Management - available at https://danepubliczne.imgw.pl/datastore.
-The project includes data preprocessing, checking missing data, checking outliers and visualizing data on bike routes and bikestations in Warsaw
+Exploratory analysis on the data set which contains historical time series data of public bike sharing system in Warsaw. Project explores patterns of bike routes using clustering algorithm and shows the relationship between the bike rentals and the explanatory variables like weather or the day of the week. . The project uses over 4,100 JSON files, saved every 10 minutes, containing station data and lists of bikes located at each bike station in Warsaw.
+The project uses archival meteorological data collected by the Institute of Meteorology and Water Management - available at https://danepubliczne.imgw.pl/datastore. Project in Python with usage of Jupyter Notebook and ML libraries(e.g Numpy, Pandas, Matplotlib)
+
+
+</br>
+
+<h2><b>2. Description of the dataset </b></p></h2>
 
 
 Main information about data:
 - 4,184 JSON files, saved every 10 minutes between 03/04/2018 - 04/04/2018
 - 1 JSON file contains information on an average of 355 bicycle stations in Warsaw
-
-</br>
-
-<h2><b>2. Description of dataset </b></p></h2>
 
 An overview of the most important attributes included in this set used in the analysis and visualization is presented below:
 
@@ -87,8 +87,8 @@ After adding up the number of bikes rented at all stations throughout the datase
 
 
 
-<h2><b>3. Exploratory data analysis </b></h2>
-<h3><b>3.1. Interactive grouping of bikes stations using the Folium library </b></h3>
+<h2><b>4. Exploratory data analysis </b></h2>
+<h3><b>4.2. Interactive grouping of bikes stations using the Folium library </b></h3>
 
 
 The analysis and visualization of this data uses the folium library, thanks to which it was created a map containing interactive markers that automatically group the number of stations on the map. Tags are grouped with locations if they are close enough to each other.
@@ -106,7 +106,7 @@ On this map there are names of individual stations along with the number of bike
 
 <br>
 
-<h3><b>3.2. Analysis of the popularity of bike routes </b></h3>
+<h3><b>4.3. Analysis of the popularity of bike routes </b></h3>
 The main dataset was transformed into a dataset containing information on bike numbers at stations to analyze popular bike routes.
 The analyzed set, containing information about the numbers of bikes that are pinned to the station in a given time interval, constitutes <b>19 783 745</b> observations. In the analyzed period, information on <b> 249</b> city bikes was recorded.
 The picture of the analyzed dataframe is presented below
@@ -115,10 +115,12 @@ The picture of the analyzed dataframe is presented below
 Thanks to the use of the Folium library, we can also present popular bike routes. Those that were counted at least 50 times over the analyzed period are presented on the map below.
 <img width="600" height="500" src = img/popular_routes.png/>
 
+
+<h3><b>4.4.  Exploration of patterns of bike routes using clustering algorithm </b></h3>
 These routes can be represented as a graph. Such a graph with distinguished clusters is presented below (the Louvain algorithm, which is a hierarchical clustering algorithm, was used as the clustering method).
 <img width="600" height="600" src = img/graph.png/>
 
-the composition of three exemplary clusters is presented below
+the composition of three exemplary clusters is presented below.
 <img width="300" height="300" src = img/cluster.png/>
 
 
