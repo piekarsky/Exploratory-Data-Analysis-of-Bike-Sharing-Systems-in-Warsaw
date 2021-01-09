@@ -3,7 +3,7 @@
 
 <h2><b>1. Synopsis </b></p></h2>
 
-Exploratory analysis on the data set which contains historical time series data of public bike sharing system in Warsaw. Project explores patterns of bike routes using clustering algorithm and shows the relationship between the bike rentals and the explanatory variables like weather or the day of the week. . The project uses over 4,100 JSON files, saved every 10 minutes, containing station data and lists of bikes located at each bike station in Warsaw.
+Exploratory analysis on the dataset which contains historical time series data of public bike sharing systems in Warsaw. Project explores patterns of bike routes using clustering algorithm and shows the relationship between the bike rentals and the explanatory variables like weather or the day of the week. . The project uses over 4,100 JSON files, saved every 10 minutes, containing station data and lists of bikes located at each bike station in Warsaw.
 The project uses archival meteorological data collected by the Institute of Meteorology and Water Management - available at https://danepubliczne.imgw.pl/datastore. Project in Python with usage of Jupyter Notebook and ML libraries(e.g Numpy, Pandas, Matplotlib)
 
 
@@ -117,12 +117,16 @@ Thanks to the use of the Folium library, we can also present popular bike routes
 
 
 <h3><b>4.4.  Exploration of patterns of bike routes using clustering algorithm </b></h3>
-These routes can be represented as a graph. Such a graph with distinguished clusters is presented below (the Louvain algorithm, which is a hierarchical clustering algorithm, was used as the clustering method).
+Routes can be represented as a graph. Such a graph with distinguished clusters is presented below (the <b>Louvain algorithm</b>, which is a hierarchical clustering algorithm, was used as the clustering method).
 <img width="600" height="600" src = img/graph.png/>
 
 the composition of three exemplary clusters is presented below.
 <img width="300" height="300" src = img/cluster.png/>
 
+
+The vast majority of stations in a particular cluster are stations located in one region, so it can be concluded that people most often move between stations located in close proximity to each other.
+This relationship can also be seen on the heatmap below.
+<img width="350" height="350" src = img/heatmap.png/>
 
 <hr>
 
