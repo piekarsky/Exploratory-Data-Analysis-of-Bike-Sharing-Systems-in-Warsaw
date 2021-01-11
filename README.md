@@ -75,7 +75,7 @@ Due to the large variety of locations of bicycle stations and the fact that they
 
 </br>
 Using the box-plot, it is also possible to evaluate the occurrence of outliers at particular hours of each day based on the sum of bikes rented from all stations. The chart shows that one day at 2 a.m. and 7 a.m. there was a much greater number of rentals, and these values ​​in such hours over five times higher than their median are certainly unrealistic.
-<img width="650" height="450" src = img/box-plot2.png/>
+<img width="700" height="450" src = img/box-plot2.png/>
 
 
 
@@ -108,7 +108,7 @@ On this map there are names of individual stations along with the number of bike
 
 <h3><b>4.3. Analysis of the popularity of bike routes </b></h3>
 The main dataset was transformed into a dataset containing information on bike numbers at stations to analyze popular bike routes.
-The analyzed set, containing information about the numbers of bikes that are pinned to the station in a given time interval, constitutes <b>19 783 745</b> observations. In the analyzed period, information on <b> 249</b> city bikes was recorded.
+The analyzed set, containing information about the numbers of bikes that are pinned to the station in a given time interval, constitutes <b>19 783 745</b> observations. In the analyzed period, information on <b> 249</b> bikes was recorded.
 The picture of the analyzed dataframe is presented below
 <img width="600" height="350" src = img/dataframe3.png/>
 
@@ -121,12 +121,33 @@ Routes can be represented as a graph. Such a graph with distinguished clusters i
 <img width="600" height="600" src = img/graph.png/>
 
 the composition of three exemplary clusters is presented below.
-<img width="300" height="300" src = img/cluster.png/>
+
 
 
 The vast majority of stations in a particular cluster are stations located in one region, so it can be concluded that people most often move between stations located in close proximity to each other.
 This relationship can also be seen on the heatmap below.
-<img width="350" height="350" src = img/heatmap.png/>
+<img width="5000" height="500" src = img/heatmap.png/>
+
+
+It shows that it is between the neighboring stations - stations with similar ID numbers that are most frequently used.
+
+The table below presents the most popular bike routes (the count column indicates the number of bikes that traveled from station A to station B in a given periodn).
+<img width="450" height="450" src = img/xxx.png/>
+
+
+The picture below shows a map of Warsaw with the 15 most popular bike routes marked.
+<img width="450" height="450" src = img/xxx.png/>
+
+
+
+Below is a fragment of the map of Warsaw showing the most popular bike route - <b>Stefan Banach - UW <—> al. Niepodległości - Batory </b>
+<img width="450" height="450" src = img/xxx.png/>
+
+
+The most popular routes can also be presented as a graph.
+<img width="450" height="450" src = img/graph2.png/>
+
+The image below shows a histogram that shows how long bikes are typically rented. Unfortunately, due to the low dynamics of data (data collected every 10 minutes), this histogram is burdened with a large error and a trip that lasted e.g. 12 minutes can be recorded in the same way as a 28-minute drive. For example, a bike that was rented at 2:39 PM and returned at 2:51 PM will be considered as a 30-minute ride, as well as a bike rented at 2:31 PM and returned at 2:59 PM. The 30-minute bar does not have to specify such a bike rental time and with more dynamic data it could be a 20-minute value. The issue of the length of renting a bike is quite important because the first 20 minutes are free.
 
 <hr>
 
