@@ -1,4 +1,4 @@
-# Analysis-And-Visualization-For-Bike-Sharing-Systems-In-Warsaw
+# Exploratory-Data-Analysis-of-Bike-Sharing-Systems-in-Warsaw
 
 
 <h2><b>1. Synopsis </b></p></h2>
@@ -83,12 +83,13 @@ Analyzing the data in terms of the largest number of bikes rented from all time 
 
 In view of the above, the data on the number of bikes at stations from <b>2018-03-27 02:30</b>, <b>2018-03-27 02:40 </b>and <b>2018-03-14 07:00 </b>have been deleted.
 After adding up the number of bikes rented at all stations throughout the dataset period, it can be seen that there are stations from which no bike has left in the considered time. These stations, in the context of the popularity rating, were not taken into account and were removed from the dataset.
-<img width="700" height="450" src = img/dataframe2.png/>
+<img width="700" height="400" src = img/dataframe2.png/>
 
 
 
 <h2><b>4. Exploratory data analysis </b></h2>
-<h3><b>4.2. Interactive grouping of bikes stations using the Folium library </b></h3>
+
+<h3><b>4.1. Interactive grouping of bikes stations using the Folium library </b></h3>
 
 
 The analysis and visualization of this data uses the folium library, thanks to which it was created a map containing interactive markers that automatically group the number of stations on the map. Tags are grouped with locations if they are close enough to each other.
@@ -104,9 +105,8 @@ On this map there are names of individual stations along with the number of bike
 
 
 
-<br>
 
-<h3><b>4.3. Analysis of the popularity of bike routes </b></h3>
+<h3><b>4.2. Analysis of the popularity of bike routes </b></h3>
 The main dataset was transformed into a dataset containing information on bike numbers at stations to analyze popular bike routes.
 The analyzed set, containing information about the numbers of bikes that are pinned to the station in a given time interval, constitutes <b>19 783 745</b> observations. In the analyzed period, information on <b> 249</b> bikes was recorded.
 The picture of the analyzed dataframe is presented below
@@ -116,41 +116,43 @@ Thanks to the use of the Folium library, we can also present popular bike routes
 <img width="600" height="500" src = img/popular_routes.png/>
 
 
-<h3><b>4.4.  Exploration of patterns of bike routes using clustering algorithm </b></h3>
+<h3><b>4.3.  Exploration of patterns of bike routes using clustering algorithm </b></h3>
 Routes can be represented as a graph. Such a graph with distinguished clusters is presented below (the <b>Louvain algorithm</b>, which is a hierarchical clustering algorithm, was used as the clustering method).
 <img width="600" height="600" src = img/graph.png/>
 
 the composition of three exemplary clusters is presented below.
-
+<img width="700" height="400" src = img/cluster.png/>
 
 
 The vast majority of stations in a particular cluster are stations located in one region, so it can be concluded that people most often move between stations located in close proximity to each other.
 This relationship can also be seen on the heatmap below.
-<img width="5000" height="500" src = img/heatmap.png/>
+<img width="500" height="500" src = img/heatmap.png/>
 
 
 It shows that it is between the neighboring stations - stations with similar ID numbers that are most frequently used.
 
-The table below presents the most popular bike routes (the count column indicates the number of bikes that traveled from station A to station B in a given periodn).
-<img width="450" height="450" src = img/xxx.png/>
+The table below presents the most popular bike routes (the count column indicates the number of bikes that traveled from station A to station B in a given period).
+<img width="450" height="450" src = img/10pop_routes.png/>
 
 
 The picture below shows a map of Warsaw with the 15 most popular bike routes marked.
-<img width="450" height="450" src = img/xxx.png/>
+<img width="450" height="450" src = img/pop_routes_marked.png/>
 
-
+The most popular routes can also be presented as a graph.
+<img width="450" height="450" src = img/graph2.png/>
 
 Below is a fragment of the map of Warsaw showing the most popular bike route - <b>Stefan Banach - UW <—> al. Niepodległości - Batory </b>
 <img width="450" height="450" src = img/xxx.png/>
 
 
-The most popular routes can also be presented as a graph.
-<img width="450" height="450" src = img/graph2.png/>
 
+<h3><b>4.4.  Analysis of the length of bike rentals </b></h3>
 The image below shows a histogram that shows how long bikes are typically rented. Unfortunately, due to the low dynamics of data (data collected every 10 minutes), this histogram is burdened with a large error and a trip that lasted e.g. 12 minutes can be recorded in the same way as a 28-minute drive. For example, a bike that was rented at 2:39 PM and returned at 2:51 PM will be considered as a 30-minute ride, as well as a bike rented at 2:31 PM and returned at 2:59 PM. The 30-minute bar does not have to specify such a bike rental time and with more dynamic data it could be a 20-minute value. The issue of the length of renting a bike is quite important because the first 20 minutes are free.
 
 <hr>
 
+
+<br>
 The notebook includes many charts, among others
 correlation between the number of bike rentals and the air temperature or depending on the hour on individual days of the week. <br>
 The chart below shows the correlation between the number of bike rentals and the air temperature.
