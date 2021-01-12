@@ -109,7 +109,7 @@ On this map there are names of individual stations along with the number of bike
 <h3><b>4.2. Analysis of the popularity of bike routes </b></h3>
 The main dataset was transformed into a dataset containing information on bike numbers at stations to analyze popular bike routes.
 The analyzed set, containing information about the numbers of bikes that are pinned to the station in a given time interval, constitutes <b>19 783 745</b> observations. In the analyzed period, information on <b> 249</b> bikes was recorded.
-The picture of the analyzed dataframe is presented below
+The picture of the analyzed dataframe is presented below </br>
 <img width="600" height="350" src = img/dataframe3.png/>
 
 Thanks to the use of the Folium library, we can also present popular bike routes. Those that were counted at least 50 times over the analyzed period are presented on the map below.
@@ -121,44 +121,54 @@ Routes can be represented as a graph. Such a graph with distinguished clusters i
 <img width="600" height="600" src = img/graph.png/>
 
 the composition of three exemplary clusters is presented below.
-<img width="700" height="400" src = img/cluster.png/>
+<img width="550" height="300" src = img/cluster.png/>
 
 
 The vast majority of stations in a particular cluster are stations located in one region, so it can be concluded that people most often move between stations located in close proximity to each other.
-This relationship can also be seen on the heatmap below.
+This relationship can also be seen on the heatmap below. </br>
 <img width="500" height="500" src = img/heatmap.png/>
 
 
 It shows that it is between the neighboring stations - stations with similar ID numbers that are most frequently used.
 
 The table below presents the most popular bike routes (the count column indicates the number of bikes that traveled from station A to station B in a given period).
-<img width="450" height="450" src = img/10pop_routes.png/>
+<img width="450" height="300" src = img/10pop_routes.png/>
 
 
 The picture below shows a map of Warsaw with the 15 most popular bike routes marked.
 <img width="450" height="450" src = img/pop_routes_marked.png/>
 
 The most popular routes can also be presented as a graph.
-<img width="450" height="450" src = img/graph2.png/>
+<img width="500" height="450" src = img/graph2.png/>
 
 Below is a fragment of the map of Warsaw showing the most popular bike route - <b>Stefan Banach - UW <—> al. Niepodległości - Batory </b>
-<img width="450" height="450" src = img/xxx.png/>
+<img width="450" height="450" src = img/the_most_pop_route.png/>
 
 
 
 <h3><b>4.4.  Analysis of the length of bike rentals </b></h3>
 The image below shows a histogram that shows how long bikes are typically rented. Unfortunately, due to the low dynamics of data (data collected every 10 minutes), this histogram is burdened with a large error and a trip that lasted e.g. 12 minutes can be recorded in the same way as a 28-minute drive. For example, a bike that was rented at 2:39 PM and returned at 2:51 PM will be considered as a 30-minute ride, as well as a bike rented at 2:31 PM and returned at 2:59 PM. The 30-minute bar does not have to specify such a bike rental time and with more dynamic data it could be a 20-minute value. The issue of the length of renting a bike is quite important because the first 20 minutes are free.
+<img width="450" height="450" src = img/hist_of_length_of_bike_rentals.png/>
 
-<hr>
 
 
 <br>
+<h3><b>4.5.  Analysis of the length of bike rentals </b></h3>
 The notebook includes many charts, among others
 correlation between the number of bike rentals and the air temperature or depending on the hour on individual days of the week. <br>
 The chart below shows the correlation between the number of bike rentals and the air temperature.
 <img width="600" height="300" src = img/chart1.png/>
 <br>
 
+
+The table of correlation values ​​between the number of bikes rented and the value of the air temperature or the sum of rainfall during the day is presented below.
+<img width="400" height="300" src = img/corr_table.png/>
+
+The correlation coefficient (in this case Pearson) between the number of bikes rented and the temperature value is <b>0.67 </b>, which indicates a significant correlation between these variables. The correlation coefficient between the number of bikes rented and the sum of rainfall is <b>-0.41</b> (negative correlation), which shows a moderate correlation.
+
+
 And the chart below showing the correlation air temperature or depending on the hour on individual days of the week.
-<img width="600" height="300" src = img/chart2.png/>
+<img width="600" height="300" src = img/graph3.png/>
+
+
 
