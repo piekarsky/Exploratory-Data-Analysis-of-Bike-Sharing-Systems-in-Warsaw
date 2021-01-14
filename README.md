@@ -171,7 +171,7 @@ And the chart below showing the correlation air temperature or depending on the 
 <img width="600" height="300" src = img/graph3.png/>
 
 The table below presents a detailed average number of bikes rented at specific hours of each day of the week.
-<img width="300" height="700" src = img/table2.png/>
+<img width="350" height="520" src = img/table2.png/>
 
 
 Looking at the chart and tables above, it can be seen that the most bike rentals are recorded on working days in the <b>afternoon</b>, i.e. <b>4 pm - 5 pm</b>, and greater rental values ​​than usual are also visible in the <b>mornings 7 - 8 a.m.</b>. It can therefore be concluded that city bikes They are a popular means of transport for commuting or returning from work, school, or to transport to the metro station. The graph shows that city bikes are also popular on <b>weekends</b>. There is a lot of interest in the afternoon hours (especially on <b>Sundays</b>).
