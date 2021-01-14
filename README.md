@@ -132,7 +132,7 @@ This relationship can also be seen on the heatmap below. </br>
 It shows that it is between the neighboring stations - stations with similar ID numbers that are most frequently used.
 
 The table below presents the most popular bike routes (the count column indicates the number of bikes that traveled from station A to station B in a given period).
-<img width="450" height="250" src = img/10pop_routes.png/>
+<img width="450" height="220" src = img/10pop_routes.png/>
 
 
 The picture below shows a map of Warsaw with the 15 most popular bike routes marked.
@@ -162,7 +162,7 @@ The chart below shows the correlation between the number of bike rentals and the
 
 
 The table of correlation values ​​between the number of bikes rented and the value of the air temperature or the sum of rainfall during the day is presented below. </br>
-<img width="200" height="120" src = img/corr_table.png/>
+<img width="200" height="100" src = img/corr_table.png/>
 
 The correlation coefficient (in this case Pearson) between the number of bikes rented and the temperature value is <b>0.67 </b>, which indicates a significant correlation between these variables. The correlation coefficient between the number of bikes rented and the sum of rainfall is <b>-0.41</b> (negative correlation), which shows a moderate correlation.
 
@@ -171,7 +171,7 @@ And the chart below showing the correlation air temperature or depending on the 
 <img width="600" height="300" src = img/graph3.png/>
 
 The table below presents a detailed average number of bikes rented at specific hours of each day of the week.
-<img width="600" height="300" src = img/graph3.png/>
+<img width="300" height="700" src = img/table2.png/>
 
 
 Looking at the chart and tables above, it can be seen that the most bike rentals are recorded on working days in the <b>afternoon</b>, i.e. <b>4 pm - 5 pm</b>, and greater rental values ​​than usual are also visible in the <b>mornings 7 - 8 a.m.</b>. It can therefore be concluded that city bikes They are a popular means of transport for commuting or returning from work, school, or to transport to the metro station. The graph shows that city bikes are also popular on <b>weekends</b>. There is a lot of interest in the afternoon hours (especially on <b>Sundays</b>).
