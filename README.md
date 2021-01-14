@@ -136,19 +136,19 @@ The table below presents the most popular bike routes (the count column indicate
 
 
 The picture below shows a map of Warsaw with the 15 most popular bike routes marked.
-<img width="450" height="450" src = img/pop_routes_marked.png/>
+<img width="400" height="450" src = img/pop_routes_marked.png/>
 
 The most popular routes can also be presented as a graph.
 <img width="500" height="450" src = img/graph2.png/>
 
 Below is a fragment of the map of Warsaw showing the most popular bike route - <b>Stefan Banach - UW <—> al. Niepodległości - Batory </b></br>
-<img width="550" height="350" src = img/the_most_pop_route.png/>
+<img width="550" height="280" src = img/the_most_pop_route.png/>
 
 
 
 <h3><b>4.4.  Analysis of the length of bike rentals </b></h3>
 The image below shows a histogram that shows how long bikes are typically rented. Unfortunately, due to the low dynamics of data (data collected every 10 minutes), this histogram is burdened with a large error and a trip that lasted e.g. 12 minutes can be recorded in the same way as a 28-minute drive. For example, a bike that was rented at 2:39 PM and returned at 2:51 PM will be considered as a 30-minute ride, as well as a bike rented at 2:31 PM and returned at 2:59 PM. The 30-minute bar does not have to specify such a bike rental time and with more dynamic data it could be a 20-minute value. The issue of the length of renting a bike is quite important because the first 20 minutes are free.
-<img width="550" height="300" src = img/hist_of_length_of_bike_rentals.png/>
+<img width="500" height="300" src = img/hist_of_length_of_bike_rentals.png/>
 
 
 
@@ -161,8 +161,8 @@ The chart below shows the correlation between the number of bike rentals and the
 <br>
 
 
-The table of correlation values ​​between the number of bikes rented and the value of the air temperature or the sum of rainfall during the day is presented below.
-<img width="240" height="150" src = img/corr_table.png/>
+The table of correlation values ​​between the number of bikes rented and the value of the air temperature or the sum of rainfall during the day is presented below. </br>
+<img width="200" height="120" src = img/corr_table.png/>
 
 The correlation coefficient (in this case Pearson) between the number of bikes rented and the temperature value is <b>0.67 </b>, which indicates a significant correlation between these variables. The correlation coefficient between the number of bikes rented and the sum of rainfall is <b>-0.41</b> (negative correlation), which shows a moderate correlation.
 
@@ -170,5 +170,8 @@ The correlation coefficient (in this case Pearson) between the number of bikes r
 And the chart below showing the correlation air temperature or depending on the hour on individual days of the week. </br>
 <img width="600" height="300" src = img/graph3.png/>
 
+The table below presents a detailed average number of bikes rented at specific hours of each day of the week.
+<img width="600" height="300" src = img/graph3.png/>
 
 
+Looking at the chart and tables above, it can be seen that the most bike rentals are recorded on working days in the <b>afternoon</b>, i.e. <b>4 pm - 5 pm</b>, and greater rental values ​​than usual are also visible in the <b>mornings 7 - 8 a.m.</b>. It can therefore be concluded that city bikes They are a popular means of transport for commuting or returning from work, school, or to transport to the metro station. The graph shows that city bikes are also popular on <b>weekends</b>. There is a lot of interest in the afternoon hours (especially on <b>Sundays</b>).
