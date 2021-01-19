@@ -110,7 +110,7 @@ On this map there are names of individual stations along with the number of bike
 The main dataset was transformed into a dataset containing information on bike numbers at stations to analyze popular bike routes.
 The analyzed set, containing information about the numbers of bikes that are pinned to the station in a given time interval, constitutes <b>19 783 745</b> observations. In the analyzed period, information on <b> 249</b> bikes was recorded.
 The picture of the analyzed dataframe is presented below </br>
-<img width="600" height="350" src = img/dataframe3.png/>
+<img width="550" height="300" src = img/dataframe3.png/>
 
 Thanks to the use of the Folium library, we can also present popular bike routes. Those that were counted at least 50 times over the analyzed period are presented on the map below.
 <img width="550" height="500" src = img/popular_routes.png/>
@@ -118,7 +118,7 @@ Thanks to the use of the Folium library, we can also present popular bike routes
 
 <h3><b>4.3.  Exploration of patterns of bike routes using clustering algorithm </b></h3>
 Routes can be represented as a graph. Such a graph with distinguished clusters is presented below (the <b>Louvain algorithm</b>, which is a hierarchical clustering algorithm, was used as the clustering method).
-<img width="600" height="600" src = img/graph.png/>
+<img width="620" height="600" src = img/graph.png/>
 
 the composition of three exemplary clusters is presented below.
 <img width="600" height="210" src = img/cluster.png/>
@@ -153,7 +153,7 @@ The image below shows a histogram that shows how long bikes are typically rented
 
 
 <br>
-<h3><b>4.5.  Analysis of the length of bike rentals </b></h3>
+<h3><b>4.5.  Visualization of bike sharing data as a time series </b></h3>
 The notebook includes many charts, among others
 correlation between the number of bike rentals and the air temperature or depending on the hour on individual days of the week. <br>
 The chart below shows the correlation between the number of bike rentals and the air temperature.
@@ -162,7 +162,7 @@ The chart below shows the correlation between the number of bike rentals and the
 
 
 The table of correlation values ​​between the number of bikes rented and the value of the air temperature or the sum of rainfall during the day is presented below. </br>
-<img width="200" height="100" src = img/corr_table.png/>
+<img width="250" height="100" src = img/corr_table.png/>
 
 The correlation coefficient (in this case Pearson) between the number of bikes rented and the temperature value is <b>0.67 </b>, which indicates a significant correlation between these variables. The correlation coefficient between the number of bikes rented and the sum of rainfall is <b>-0.41</b> (negative correlation), which shows a moderate correlation.
 
@@ -175,3 +175,7 @@ The table below presents a detailed average number of bikes rented at specific h
 
 
 Looking at the chart and tables above, it can be seen that the most bike rentals are recorded on working days in the <b>afternoon</b>, i.e. <b>4 pm - 5 pm</b>, and greater rental values ​​than usual are also visible in the <b>mornings 7 - 8 a.m.</b>. It can therefore be concluded that city bikes They are a popular means of transport for commuting or returning from work, school, or to transport to the metro station. The graph shows that city bikes are also popular on <b>weekends</b>. There is a lot of interest in the afternoon hours (especially on <b>Sundays</b>).
+
+<h3><b>4.6. Analysis of popularity of bike stations </b></h3>
+The most popular bicycle stations in Warsaw (with the largest median of rentals during the day) are the following stations: <b>Al. Niepodległości - Batory</b>, <b>Stefan Banach - UW</b>and <b>Rondo Jazdy Polskiej</b>. The list of the 10 bike stations with the highest median is presented below.
+<img width="450" height="300" src = img/table2.png/>
