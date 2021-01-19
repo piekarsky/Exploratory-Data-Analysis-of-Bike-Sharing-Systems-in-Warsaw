@@ -63,19 +63,19 @@ e.g. for the Fieldorf - Bukowski stations 1092 NaN / 4184 = 26%
 <h3><b>3.3. Checking outliers </b></h3>
 
 The occurrence of outliers for particular days was checked using a box plot. It shows that one station on March 14 and March 25 recorded a much larger number of bike rentals compared to all other stations on that day.
-<img width="650" height="650" src = img/box-plot1.png/>
+<img width="600" height="650" src = img/box-plot1.png/>
 
 
 
 
 On the chart above, it can be seen that one station on March 14 and March 25 recorded a much larger number of bike rentals compared to all other stations on that day.
 
-Due to the large variety of locations of bicycle stations and the fact that they can be very popular in the event of major sports or music events, these values do not have to mean a data collection error. The popularity of the station was assessed on the basis of the median, which is not sensitive to outliers, so extreme points were not removed
+Due to the large variety of locations of bike stations and the fact that they can be very popular in the event of major sports or music events, these values do not have to mean a data collection error. The popularity of the station was assessed on the basis of the median, which is not sensitive to outliers, so extreme points were not removed
 
 
 </br>
 Using the box-plot, it is also possible to evaluate the occurrence of outliers at particular hours of each day based on the sum of bikes rented from all stations. The chart shows that one day at 2 a.m. and 7 a.m. there was a much greater number of rentals, and these values ​​in such hours over five times higher than their median are certainly unrealistic.
-<img width="700" height="450" src = img/box-plot2.png/>
+<img width="700" height="420" src = img/box-plot2.png/>
 
 
 
@@ -121,7 +121,7 @@ Routes can be represented as a graph. Such a graph with distinguished clusters i
 <img width="600" height="600" src = img/graph.png/>
 
 the composition of three exemplary clusters is presented below.
-<img width="550" height="240" src = img/cluster.png/>
+<img width="600" height="210" src = img/cluster.png/>
 
 
 The vast majority of stations in a particular cluster are stations located in one region, so it can be concluded that people most often move between stations located in close proximity to each other.
@@ -148,7 +148,7 @@ Below is a fragment of the map of Warsaw showing the most popular bike route - <
 
 <h3><b>4.4.  Analysis of the length of bike rentals </b></h3>
 The image below shows a histogram that shows how long bikes are typically rented. Unfortunately, due to the low dynamics of data (data collected every 10 minutes), this histogram is burdened with a large error and a trip that lasted e.g. 12 minutes can be recorded in the same way as a 28-minute drive. For example, a bike that was rented at 2:39 PM and returned at 2:51 PM will be considered as a 30-minute ride, as well as a bike rented at 2:31 PM and returned at 2:59 PM. The 30-minute bar does not have to specify such a bike rental time and with more dynamic data it could be a 20-minute value. The issue of the length of renting a bike is quite important because the first 20 minutes are free.
-<img width="500" height="300" src = img/hist_of_length_of_bike_rentals.png/>
+<img width="500" height="300" src = img/hist_of_length_of_bike_rentals_.png/>
 
 
 
