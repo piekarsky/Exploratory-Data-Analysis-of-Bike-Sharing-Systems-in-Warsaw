@@ -132,11 +132,12 @@ This relationship can also be seen on the heatmap below. </br>
 It shows that it is between the neighboring stations - stations with similar ID numbers that are most frequently used.
 
 The table below presents the most popular bike routes (the count column indicates the number of bikes that traveled from station A to station B in a given period).
+<br>
 <img width="450" height="220" src = img/10pop_routes.png/>
 
 
 The picture below shows a map of Warsaw with the 15 most popular bike routes marked.
-<img width="400" height="450" src = img/pop_routes_marked.png/>
+<img width="400" height="450" src = img/the_most_popular_routes.png/>
 
 The most popular routes can also be presented as a graph.
 <img width="500" height="450" src = img/graph2.png/>
