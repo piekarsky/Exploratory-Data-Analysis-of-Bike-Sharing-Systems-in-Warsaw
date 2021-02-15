@@ -154,13 +154,17 @@ The image below shows a histogram that shows how long bikes are typically rented
 
 
 <br>
-<h3><b>4.5.  Visualization of bike sharing data as a time series </b></h3>
+<h3><b>4.5.  Analysis of bicycle rentals </b></h3>
 The notebook includes many charts, among others
 correlation between the number of bike rentals and the air temperature or depending on the hour on individual days of the week. <br>
 The chart below shows the correlation between the number of bike rentals and the air temperature.
-<img width="600" height="300" src = img/chart1.png/>
-<br>
+<img width="550" height="300" src = img/chart1.png/>
 
+
+
+This correlation can also be seen in the scatter plot of the number of bike rentals depending on air temperature
+<img width="550" height="300" src = img/plot1.png/>
+<br>
 
 The table of correlation values ​​between the number of bikes rented and the value of the air temperature or the sum of rainfall during the day is presented below. </br>
 <img width="250" height="100" src = img/corr_table.png/>
