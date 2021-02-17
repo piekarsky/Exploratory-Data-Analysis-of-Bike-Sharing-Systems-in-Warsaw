@@ -154,7 +154,7 @@ The image below shows a histogram that shows how long bikes are typically rented
 
 
 <br>
-<h3><b>4.5.  Analysis of bicycle rentals </b></h3>
+<h3><b>4.5.  Analysis of bike rentals </b></h3>
 The notebook includes many charts, among others
 correlation between the number of bike rentals and the air temperature or depending on the hour on individual days of the week. <br>
 The chart below shows the correlation between the number of bike rentals and the air temperature.
@@ -169,7 +169,7 @@ This correlation can also be seen in the scatter plot of the number of bike rent
 The table of correlation values ​​between the number of bikes rented and the value of the air temperature or the sum of rainfall during the day is presented below. </br>
 <img width="250" height="100" src = img/corr_table.png/>
 
-The correlation coefficient (in this case Pearson) between the number of bikes rented and the temperature value is <b>0.67 </b>, which indicates a significant correlation between these variables. The correlation coefficient between the number of bikes rented and the sum of rainfall is <b>-0.41</b> (negative correlation), which shows a moderate correlation.
+The correlation coefficient (in this case Pearson coeff) between the number of bikes rented and the temperature value is <b>0.67</b>, which indicates a significant correlation between these variables. The correlation coefficient between the number of bikes rented and the sum of rainfall is <b>-0.41</b> (negative correlation), which shows a moderate correlation.
 
 
 And the chart below showing the correlation air temperature or depending on the hour on individual days of the week. </br>
