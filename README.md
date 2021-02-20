@@ -3,8 +3,9 @@
 
 <h2><b>1. Synopsis </b></p></h2>
 
-Exploratory analysis on the dataset which contains historical time series data of public bike sharing systems in Warsaw. Project explores patterns of bike routes using clustering algorithm and shows the relationship between the bike rentals and the explanatory variables like weather or the day of the week. . The project uses over 4,100 JSON files, saved every 10 minutes, containing station data and lists of bikes located at each bike station in Warsaw.
-The project uses archival meteorological data collected by the Institute of Meteorology and Water Management - available at https://danepubliczne.imgw.pl/datastore. Project in Python with usage of Jupyter Notebook and ML libraries(e.g Numpy, Pandas, Matplotlib)
+Exploratory analysis on the dataset which contains historical time series data of public bike sharing systems in Warsaw. The project uses over 4,100 JSON files, saved every 10 minutes, containing station data and lists of bikes located at each bike station in Warsaw. This project explores patterns of bike routes using clustering algorithm and shows among other things the relationship between the bike rentals and the explanatory variables like weather or the day of the week. Jupyter notebook contains all stages from data set preparation, cleaning, checking outliers to creating analyzes, visualization and discovering patterns.  
+Archival meteorological data collected by the Institute of Meteorology and Water Management - available at https://danepubliczne.imgw.pl/datastore was used in the project.
+
 
 
 </br>
