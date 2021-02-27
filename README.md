@@ -134,7 +134,7 @@ It shows that it is between the neighboring stations - stations with similar ID 
 
 The table below presents the most popular bike routes (the count column indicates the number of bikes that traveled from station A to station B in a given period).
 <br>
-<img width="450" height="220" src = img/10pop_routes.png/>
+<img width="450" height="220" src = img/table3.png/>
 
 
 The picture below shows a map of Warsaw with the 15 most popular bike routes marked.
