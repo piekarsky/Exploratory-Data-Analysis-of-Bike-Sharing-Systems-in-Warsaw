@@ -167,6 +167,11 @@ This correlation can also be seen in the scatter plot of the number of bike rent
 <img width="550" height="300" src = img/plot1.png/>
 <br>
 
+With regard to the number of bikes rented per hour on individual days, it is as follows:
+<img width="550" height="300" src = img/plot2.png/>
+<br>
+
+
 The table of correlation values ​​between the number of bikes rented and the value of the air temperature or the sum of rainfall during the day is presented below. </br>
 <img width="250" height="100" src = img/corr_table.png/>
 
@@ -182,6 +187,6 @@ The table below presents a detailed average number of bikes rented at specific h
 
 Looking at the chart and tables above, it can be seen that the most bike rentals are recorded on working days in the <b>afternoon</b>, i.e. <b>4 pm - 5 pm</b>, and greater rental values ​​than usual are also visible in the <b>mornings 7 - 8 a.m.</b>. It can therefore be concluded that city bikes They are a popular means of transport for commuting or returning from work, school, or to transport to the metro station. The graph shows that city bikes are also popular on <b>weekends</b>. There is a lot of interest in the afternoon hours (especially on <b>Sundays</b>).
 
-<h3><b>4.6. Analysis of popularity of bike stations </b></h3>
+<h3><b>4.6. Popularity analysis  of bike stations </b></h3>
 The most popular bike stations in Warsaw (with the largest median of rentals during the day) are the following stations: <b>Al. Niepodległości - Batory</b>, <b>Stefan Banach - UW</b> and <b>Rondo Jazdy Polskiej</b>. The list of the 10 bike stations with the highest median is presented below.
 <img width="450" height="300" src = img/the_most_popular_bike_stations.png/>
