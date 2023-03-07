@@ -1,0 +1,12 @@
+Kod;Nazwa
+B00300S;Temperatura powietrza (oficjalna)
+B00305A;Temperatura gruntu (czujnik)
+B00202A;Kierunek wiatru (czujnik)
+B00702A;Œrednia prêdkoœæ wiatru czujnik 10 minut
+B00703A;Prêdkoœæ maksymalna (czujnik)
+B00608S;Suma opadu 10 minutowego
+B00604S;Suma opadu dobowego
+B00606S;Suma opadu godzinowego
+B00802A;Wilgotnoœæ wzglêdna powietrza (czujnik)
+B00714A;Najwiêkszy poryw w okresie 10min ze stacji Synoptycznej
+B00910A;Zapas wody w œniegu (obserwator)
