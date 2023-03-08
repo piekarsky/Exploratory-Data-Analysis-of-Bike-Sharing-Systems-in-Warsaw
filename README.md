@@ -79,7 +79,7 @@ e.g. for the Fieldorf - Bukowski stations 1092 NaN / 4184 = 26%
 
 #### Checking outliers <a name = "checking_outliers"></a>
 
-The occurrence of outliers for particular days was checked using a box plot. It shows that one station on <b>14</b> and <b>25 March</b> recorded a much larger number of bike rentals compared to all other stations on that day.
+The occurrence of outliers for particular days was checked using a box plot. It shows that one station on <b> March 14</b> and <b>March 25</b> recorded a much larger number of bike rentals compared to all other stations on that day.
 <img width="600" height="650" src = img/fig_3.png/>
 
 
