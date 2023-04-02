@@ -104,7 +104,7 @@ After adding up the number of bikes rented at all stations throughout the datase
 
 ### Interactive grouping of bike stations using the Folium library <a name = "interactive_grouping_of_bike_stations"></a>
 
-The analysis and visualization of this data uses the folium library, thanks to which it was created a map containing interactive markers that automatically group the number of stations on the map. Tags are grouped with locations if they are close enough to each other.
+The analysis and visualization of this data uses the Folium library, thanks to which it was created a map containing interactive markers that automatically group the number of stations on the map. Tags are grouped with locations if they are close enough to each other.
 
 The picture below shows the map of Warsaw with the location of <b>380</b> bike stations using interactive grouping.
 
@@ -121,7 +121,7 @@ On this map there are names of  stations along with the number of bike stands th
 ### Analysis of the popularity of bike routes <a name = "analysis_of_the_popularity_of_bike_routes"></a>
 
 The main dataset was transformed into a dataset containing information on bike numbers at stations to analyze popular bike routes.
-The analyzed set, containing information about the numbers of bikes that are pinned to the station in a given time interval, constitutes <b>19 783 745</b> observations. In the analyzed period, information on <b> 249</b> bikes was recorded.
+The analyzed set, containing information about the numbers of bikes that are pinned to the station in a given time interval, constitutes <b>19 783 745</b> observations. In the analyzed period, information on <b> 5249</b> bikes was recorded.
 The analyzed dataframe is presented below. </br>
 <img width="550" height="300" src = img/fig_8.png/>
 
@@ -156,7 +156,7 @@ The picture below shows the map of Warsaw with the 15 most popular bike routes m
 The most popular routes can also be presented as a graph.
 <img width="500" height="450" src = img/fig_15.png/>
 
-The fragment of the map of Warsaw showing the most popular bike route  <b>Stefana Banacha - UW <—> al. Niepodległości - Batory is presented below.</b></br>
+The fragment of the map of Warsaw showing the most popular bike route  <b>Stefana Banacha - UW <—> al. Niepodległości - Batory </b> is presented below.</br>
 <img width="550" height="280" src = img/fig_16.png/>
 
 
