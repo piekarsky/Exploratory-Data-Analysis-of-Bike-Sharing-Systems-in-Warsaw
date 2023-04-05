@@ -191,14 +191,14 @@ The table of correlation values ​​between the number of bikes rented and the
 The correlation Pearson coefficient between the number of bikes rented and the temperature value is <b>0.67</b>, which indicates a significant correlation between these variables. The correlation coefficient between the number of bikes rented and the sum of rainfall is <b>-0.41</b> (negative correlation), which shows a moderate correlation.
 
 
-And the chart below shows the number of bike rentals depending on the hour on each day of the week. </br>
+The graph below shows the number of bike rentals depending on the hour on each day of the week. </br>
 <img width="600" height="300" src = img/fig_22.png/>
 
 The table below presents a detailed average number of bikes rented at specific hours of each day of the week.
 <img width="350" height="520" src = img/fig_23.png/>
 
 
-Looking at the chart and tables above, it can be seen that the most bike rentals are recorded on working days in the <b>afternoon</b>, i.e. <b>4 pm - 5 pm</b>, and greater rental values ​​than usual are also visible in the <b>mornings 7 - 8 a.m.</b>. It can therefore be concluded that city bikes are a popular means of transport when commuting to or returning from work, school, or are used to transport to the metro station. The graph shows that city bikes are also popular on weekends. Great interest can be seen in the afternoon (especially on <b>Sundays</b>).
+Looking at the graph and table above, it can be seen that the largest number of bike rentals is recorded on working days in the <b>afternoon</b>, i.e. <b>4 - 5 p.m.</b>, and higher than usual rental values ​​are also visible in the <b>morning 7 - 8 a.m.</b>. Therefore, it can be concluded that city bikes are a popular means of transport when commuting to or returning from work, school, or they are used to transport to the subway station. The graph shows that city bikes are also popular on weekends. Great interest can be seen in the afternoon (especially on <b>Sundays</b>).
 
 ### Popularity analysis of bike stations <a name = "popularity_analysis_of_bike_stations"></a>
 
