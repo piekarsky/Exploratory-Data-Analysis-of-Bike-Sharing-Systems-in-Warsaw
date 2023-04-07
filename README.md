@@ -51,7 +51,7 @@ The analyzed, grouped dataframe is presented below. The <b>the_day_of_the_week</
 </br>
 The analyzed dataframe with multiple indexes is shown below:
 </br>
-<img width="800" height="350" src = img/fig_1.png/>
+<img width="800" height="350" src = figures/fig_1.png/>
 
 
 The first part of the notebook contains the analysis  and visualization of bike routes (based on the numbers of bikes attached to each bike station in a given period of time). This collection contains <b>19 783 745</b> observations.
@@ -61,7 +61,7 @@ The second part of the notebook contains the analysis of bike rentals. This coll
 ### Checking for missing values <a name = "checking_for_missing_values"></a>
 
 The data analysis began with checking whether the entire data set at each station contains enough information about the number of bikes in a given time period. As seen below, missing values ​​were noted for 29 stations (these values ​​could be recorded up to 4184, because that many JSON files constituted the dataset).
-<img width="400" height="350" src = img/fig_2.png/>
+<img width="400" height="350" src = figures/fig_2.png/>
 <br>
 
 
@@ -80,7 +80,7 @@ e.g. for the Fieldorf - Bukowski stations 1092 NaN / 4184 = 26%
 #### Checking outliers <a name = "checking_outliers"></a>
 
 The occurrence of outliers for particular days was checked using a box plot. It shows that one station on <b> March 14</b> and <b>March 25</b> recorded a much larger number of bike rentals compared to all other stations on that day.
-<img width="600" height="650" src = img/fig_3.png/>
+<img width="600" height="650" src = figures/fig_3.png/>
 
 
 Due to the large variety of locations of bike stations and the fact that they can be very popular in the event of major sports or music events, these values do not have to mean a data collection error. The popularity of the station was assessed on the basis of the median, which is not sensitive to outliers, so extreme points were not removed.
@@ -88,7 +88,7 @@ Due to the large variety of locations of bike stations and the fact that they ca
 
 </br>
 Using the box-plot, it is also possible to evaluate the occurrence of outliers at particular hours of each day based on the sum of bikes rented from all stations. The chart shows that one day at 2 a.m. and 7 a.m. there was a much greater number of rentals, and these values ​​in such hours over five times higher than their median are certainly unrealistic.
-<img width="700" height="420" src = img/fig_4.png/>
+<img width="700" height="420" src = figures/fig_4.png/>
 
 
 
@@ -96,7 +96,7 @@ Analyzing the data in terms of the largest number of bikes rented from all time 
 
 In view of the above, the data on the number of bikes at stations from <b>2018-03-27 02:30</b>, <b>2018-03-27 02:40 </b>and <b>2018-03-14 07:00 </b>have been deleted.
 After adding up the number of bikes rented at all stations throughout the dataset period, it can be seen that there are stations from which no bike has left in the considered time. These stations, in the context of the popularity rating, were not taken into account and were removed from the dataset.
-<img width="700" height="400" src = img/fig_5.png/>
+<img width="700" height="400" src = figures/fig_5.png/>
 
 
 
@@ -108,12 +108,12 @@ The analysis and visualization of this data uses the Folium library, thanks to w
 
 The picture below shows the map of Warsaw with the location of <b>380</b> bike stations using interactive grouping.
 
-<img width="600" height="350" src = img/fig_6.png/>
+<img width="600" height="350" src = figures/fig_6.png/>
 
 <br>
 On this map there are names of  stations along with the number of bike stands there. This is visible when you zoom in on the map and hover the cursor over the selected marker.
 
-<img width="600" height="350" src = img/fig_7.png/>
+<img width="600" height="350" src = figures/fig_7.png/>
 
 
 
@@ -123,48 +123,48 @@ On this map there are names of  stations along with the number of bike stands th
 The main dataset was transformed into a dataset containing information on bike numbers at stations to analyze popular bike routes.
 The analyzed set, containing information about the numbers of bikes that are pinned to the station in a given time interval, constitutes <b>19 783 745</b> observations. In the analyzed period, information on <b> 5249</b> bikes was recorded.
 The analyzed dataframe is presented below. </br>
-<img width="550" height="300" src = img/fig_8.png/>
+<img width="550" height="300" src = figures/fig_8.png/>
 
 Thanks to the use of the Folium library, we can also present popular bike routes. Those that were counted at least 50 times over the analyzed period are presented on the map below.
-<img width="550" height="500" src = img/fig_9.png/>
+<img width="550" height="500" src = figures/fig_9.png/>
 
 
 ### Exploration of patterns of bike routes using clustering algorithm <a name = "exploration_of_patterns_of_bike_routes"></a>
 
 Routes can be represented as a graph. Such a graph with distinguished clusters is presented below (the <b>Louvain algorithm</b>, which is a hierarchical clustering algorithm, was used as the clustering method).
-<img width="620" height="600" src = img/fig_10.png/>
+<img width="620" height="600" src = figures/fig_10.png/>
 
 The composition of three exemplary clusters is presented below.
-<img width="600" height="210" src = img/fig_11.png/>
+<img width="600" height="210" src = figures/fig_11.png/>
 
 
 The vast majority of stations in a particular cluster are stations located in one region, so it can be concluded that people most often move between stations located in close proximity to each other.
 This relationship can also be seen on the heatmap below. </br>
-<img width="540" height="500" src = img/fig_12.png/>
+<img width="540" height="500" src = figures/fig_12.png/>
 
 
 It shows that it is between the neighboring stations - stations with similar ID numbers that are most frequently used.
 
 The table below presents the most popular bike routes (the count column indicates the number of bikes that traveled from station A to station B in a given period).
 <br>
-<img width="450" height="220" src = img/fig_13.png/>
+<img width="450" height="220" src = figures/fig_13.png/>
 
 
 The picture below shows the map of Warsaw with the 15 most popular bike routes marked.
-<img width="400" height="450" src = img/fig_14.png/>
+<img width="400" height="450" src = figures/fig_14.png/>
 
 The most popular routes can also be presented as a graph.
-<img width="500" height="450" src = img/fig_15.png/>
+<img width="500" height="450" src = figures/fig_15.png/>
 
 The fragment of the map of Warsaw showing the most popular bike route  <b>Stefana Banacha - UW <—> al. Niepodległości - Batory </b> is presented below.</br>
-<img width="550" height="280" src = img/fig_16.png/>
+<img width="550" height="280" src = figures/fig_16.png/>
 
 
 
 ### Analysis of the length of bike rentals <a name = "analysis_of_the_length_of_bike_rentals"></a>
 
 The image below shows a histogram that shows how long bikes are typically rented. Unfortunately, due to the low dynamics of data (data collected every 10 minutes), this histogram is burdened with a large error and a trip that lasted e.g. 12 minutes can be recorded in the same way as a 28-minute drive. For example, a bike that was rented at 2:39 PM and returned at 2:51 PM will be considered as a 30-minute ride, as well as a bike rented at 2:31 PM and returned at 2:59 PM. The 30-minute bar does not have to specify such a bike rental time and with more dynamic data it could be a 20-minute value. The issue of the length of renting a bike is quite important because the first 20 minutes of bike rental  are free. </br>
-<img width="500" height="300" src = img/fig_17.png/>
+<img width="500" height="300" src = figures/fig_17.png/>
 
 
 ### Analysis of bike rentals <a name = "analysis_of_bike_rentals"></a>
@@ -172,30 +172,30 @@ The image below shows a histogram that shows how long bikes are typically rented
 The notebook includes many charts, among others
 correlation between the number of bike rentals and the air temperature or depending on the hour on days of the week. <br>
 The chart below shows the correlation between the number of bike rentals and the air temperature.
-<img width="550" height="300" src = img/fig_18.png/>
+<img width="550" height="300" src = figures/fig_18.png/>
 
 
 
 This correlation can also be seen in the scatter plot of the number of bike rentals depending on temperature.
-<img width="550" height="300" src = img/fig_19.png/>
+<img width="550" height="300" src = figures/fig_19.png/>
 <br>
 
 With regard to the number of bikes rented per hour on each days, it is as follows:
-<img width="550" height="300" src = img/fig_20.png/>
+<img width="550" height="300" src = figures/fig_20.png/>
 <br>
 
 
 The table of correlation values ​​between the number of bikes rented and the value of the temperature or the sum of rainfall during the day is presented below. </br>
-<img width="250" height="100" src = img/fig_21.png/>
+<img width="250" height="100" src = figures/fig_21.png/>
 
 The correlation Pearson coefficient between the number of bikes rented and the temperature value is <b>0.67</b>, which indicates a significant correlation between these variables. The correlation coefficient between the number of bikes rented and the sum of rainfall is <b>-0.41</b> (negative correlation), which shows a moderate correlation.
 
 
 The graph below shows the number of bike rentals depending on the hour on each day of the week. </br>
-<img width="600" height="300" src = img/fig_22.png/>
+<img width="600" height="300" src = figures/fig_22.png/>
 
 The table below presents a detailed average number of bikes rented at specific hours of each day of the week.
-<img width="350" height="520" src = img/fig_23.png/>
+<img width="350" height="520" src = figures/fig_23.png/>
 
 
 Looking at the graph and table above, it can be seen that the largest number of bike rentals is recorded on working days in the <b>afternoon</b>, i.e. <b>4 - 5 p.m.</b>, and higher than usual rental values ​​are also visible in the <b>morning 7 - 8 a.m.</b>. Therefore, it can be concluded that city bikes are a popular means of transport when commuting to or returning from work, school, or they are used to transport to the subway station. The graph shows that city bikes are also popular on weekends. Great interest can be seen in the afternoon (especially on <b>Sundays</b>).
@@ -203,4 +203,4 @@ Looking at the graph and table above, it can be seen that the largest number of 
 ### Popularity analysis of bike stations <a name = "popularity_analysis_of_bike_stations"></a>
 
 The most popular bike stations in Warsaw (with the largest median of rentals during the day) are the following stations: <b>Al. Niepodległości - Batory</b>, <b>Stefan Banach - UW</b> and <b>Rondo Jazdy Polskiej</b>. The list of the 10 bike stations with the highest median is presented below. </br>
-<img width="450" height="300" src = img/fig_24.png/>
+<img width="450" height="300" src = figures/fig_24.png/>
