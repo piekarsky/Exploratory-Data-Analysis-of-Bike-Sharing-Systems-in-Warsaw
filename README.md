@@ -1,5 +1,4 @@
 # Exploratory Data Analysis of Bike Sharing Systems in Warsaw
-zzz
 
 ## Table of Contents
 
