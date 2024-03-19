@@ -187,7 +187,7 @@ With regard to number of bikes rented per hour on each days, it is as follows:
 The table of correlation values ​​between the number of bikes rented and temperature or total rainfall during the day is presented below. </br>
 <img width="250" height="100" src = figures/fig_21.png/>
 
-The correlation Pearson coefficient between number of bikes rented and the temperature is <b>0.67</b>, which indicates a significant correlation between these variables. The correlation coefficient between the number of bikes rented and the sum of rainfall is <b>-0.41</b> (negative correlation), which shows a moderate correlation.
+The Pearson correlation coefficient between the number of bikes rented and the temperature is <b>0.67</b>, which indicates a significant correlation between these variables. Pearson's correlation coefficient between the number of bikes rented and the sum of rainfall is <b>-0.41</b> (negative correlation), which shows a moderate correlation.
 
 
 The graph below shows the number of bike rentals depending on the hour on each day of the week. </br>
